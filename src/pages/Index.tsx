@@ -50,7 +50,7 @@ const Index = () => {
         {currentSolarTerm && (
           <div className="space-y-4">
             <Link to={`/solar-term/${currentSolarTerm.id}`}>
-              <div className="flex items-center justify-center gap-2">
+              <div className="bg-gradient-to-br from-primary via-accent to-primary/80 text-primary-foreground rounded-2xl p-6 shadow-[var(--shadow-soft)]">
                 <div className="flex items-center justify-between">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
