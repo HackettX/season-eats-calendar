@@ -48,20 +48,22 @@ const Index = () => {
 
         {/* Solar Term Card */}
         {currentSolarTerm && (
-          <Link to={`/solar-term/${currentSolarTerm.id}`}>
-            <div className="bg-gradient-primary rounded-lg p-6 text-primary-foreground cursor-pointer hover:shadow-[var(--shadow-glow)] transition-all duration-300">
-              <div className="flex items-center justify-between">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-3xl">{currentSolarTerm.icon}</span>
-                    <h3 className="text-xl font-semibold">当前节气：{currentSolarTerm.name}</h3>
+          <div className="space-y-4">
+            <Link to={`/solar-term/${currentSolarTerm.id}`}>
+              <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-between">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-3xl">{currentSolarTerm.icon}</span>
+                      <h3 className="text-xl font-semibold">当前节气：{currentSolarTerm.name}</h3>
+                    </div>
+                    <p className="text-sm opacity-90">{currentSolarTerm.description}</p>
                   </div>
-                  <p className="text-sm opacity-90">{currentSolarTerm.description}</p>
+                  <ArrowRight className="h-5 w-5" />
                 </div>
-                <ArrowRight className="h-5 w-5" />
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         )}
 
         {/* Seasonal Foods Section */}
