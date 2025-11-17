@@ -9,7 +9,7 @@ interface FoodCardProps {
 
 export function FoodCard({ name, description, benefits, icon }: FoodCardProps) {
   return (
-    <Card className="overflow-hidden hover:shadow-[var(--shadow-card)] transition-shadow duration-300">
+    <Card className="overflow-hidden hover:shadow-[var(--shadow-card)] transition-shadow duration-300 cursor-pointer">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-3">
           <div className="text-4xl">{icon}</div>
